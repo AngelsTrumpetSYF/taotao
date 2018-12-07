@@ -10,11 +10,11 @@ import com.taotao.sevice.ItemService;
 public class ItemServiceImpl implements ItemService {
 
   @Autowired
-  private TbItemMapper itemMapper;
+  private TbItemMapper tbItemMapper;
 
   @Override
   public TbItem getItemById(long itemId) {
-    TbItem item = itemMapper.selectByPrimaryKey(itemId);
+    TbItem item = tbItemMapper.selectByPrimaryKey(itemId);
     return item;
   }
 
